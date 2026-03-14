@@ -1,2 +1,0 @@
-example: add first password
-Browserpass download finish
