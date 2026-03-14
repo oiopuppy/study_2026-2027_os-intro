@@ -1,0 +1,109 @@
+---
+title: "Лабораторная работа №3. Markdown"
+subtitle: "Оформление отчётов с помощью Markdown"
+author: "Сунь Шэнцзе"
+institute: "РУДН"
+date: "2026-03-01"
+format:
+  beamer:
+    theme: "Madrid"
+    colortheme: "default"
+    fonttheme: "professionalfonts"
+    toc: false
+    slide-level: 2
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+    lang: ru
+number: "1132254527"
+---
+
+## Цель работы
+
+- Научиться оформлять отчёты с помощью языка разметки Markdown
+- Получить навыки преобразования Markdown-файлов в PDF и DOCX с помощью Pandoc
+- Автоматизировать процесс генерации отчетов с помощью Makefile
+
+## Подготовка среды
+
+- **Проверка установленного ПО**:
+  - Pandoc: `pandoc --version`
+  - Редактор Markdown: доступен
+
+![Проверка версии Pandoc](image/lab3_01_pandoc_version.png)
+
+## Создание отчёта в Markdown
+
+- Создан файл `lab2_report.qmd` на основе лабораторной работы №2
+- Включены все структурные элементы: титульный лист, цель, этапы, скриншоты, выводы
+
+### Примеры форматирования
+
+- **Форматирование текста**: полужирный, курсив, полужирный курсив
+- **Цитаты**: `> текст`
+- **Списки**: маркированные, нумерованные, вложенные
+- **Ссылки**: `[текст](url)`
+- **Код**: встроенный и блоки
+- **Формулы**: формула $\sin^2(x) + \cos^2(x) = 1$ демонстрирует основное тригонометрическое тождество.
+- **Индексы**: H~2~O, 2^10^
+
+## Преобразование в PDF
+
+- **Команда**: `pandoc lab2_report.qmd -o lab2_report.pdf`
+
+![Преобразование в PDF](image/lab3_02_pandoc_to_pdf.png)
+
+## Преобразование в DOCX
+
+- **Команда**: `pandoc lab2_report.qmd -o lab2_report.docx`
+
+![Преобразование в DOCX](image/lab3_03_pandoc_to_docx.png)
+
+## Результаты преобразования
+
+![Сгенерированные файлы](image/lab3_04_generated_files.png)
+
+## Проверка PDF-файла
+
+![Просмотр PDF](image/lab3_05_check_pdf.png)
+
+## Проверка DOCX-файла
+
+![Просмотр DOCX](image/lab3_06_check_docx.png)
+
+## Автоматизация с Makefile
+
+- Создан Makefile для автоматической генерации:
+
+```makefile
+FILES = $(patsubst %.qmd,%.docx,$(wildcard *.qmd))
+FILES += $(patsubst %.qmd,%.pdf,$(wildcard *.qmd))
+
+LATEX_FORMAT = --pdf-engine=xelatex
+FILTER = --filter pandoc-crossref
+
+%.docx: %.qmd
+	pandoc $< $(FILTER) -o $@
+
+%.pdf: %.qmd
+	pandoc $< $(LATEX_FORMAT) $(FILTER) -o $@
+
+all: $(FILES)
+	@echo "Генерация завершена"
+
+clean:
+	rm -f $(FILES) *~
+
+## Выводы
+
+- Освоены базовые элементы синтаксиса Markdown
+
+- Создан полноценный отчёт по лабораторной работе
+
+- Получены навыки преобразования Markdown в PDF и DOCX с помощью Pandoc
+
+- Автоматизирован процесс генерации с помощью Makefile
+
+- Все элементы форматирования корректно отображаются в конечных документах
+
+Спасибо за внимание!

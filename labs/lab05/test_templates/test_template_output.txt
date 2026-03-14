@@ -1,0 +1,4 @@
+name: LAPTOP-058L8DAA
+system: linux
+architecture: amd64
+export ENV=unknown

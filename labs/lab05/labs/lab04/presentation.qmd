@@ -1,0 +1,121 @@
+---
+title: "Лабораторная работа №4"
+subtitle: "Продвинутое использование git"
+author: "Сунь Шэнцзе"
+institute: "РУДН"
+date: "2026-03-07"
+format:
+  beamer:
+    theme: "Madrid"
+    colortheme: "default"
+    fonttheme: "professionalfonts"
+    toc: false
+    slide-level: 2
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+    lang: ru
+---
+
+## Цель работы
+
+- Получение навыков правильной работы с репозиториями git
+- Освоение рабочего процесса Gitflow Workflow
+- Изучение семантического версионирования и Conventional Commits
+- Настройка автоматического создания CHANGELOG.md
+
+## Установка ПО
+
+- **Установка git-flow**: `sudo apt install git-flow`
+- **Установка Node.js и npm**: `sudo apt install nodejs npm`
+- **Установка pnpm**: `sudo npm install -g pnpm`
+- **Установка commitizen и standard-changelog**: `pnpm add -g commitizen standard-changelog`
+
+![Установка ПО](images/lab04_01_install_software.png)
+
+## Создание репозитория
+
+- **Создание на GitHub**: репозиторий `git-extended`
+- **Клонирование и первый коммит**:
+  ```bash
+  git init
+  git remote add origin git@github.com:oiopuppy/git-extended.git
+  echo "# Git Extended Lab" > README.md
+  git add README.md
+  git commit -m "first commit"
+  git push -u origin master
+  ```
+
+![Первый коммит](images/lab04_04_first_commit.png)
+
+## Настройка Conventional Commits
+
+- **Инициализация pnpm**: `pnpm init`
+- **Настройка commitizen** в package.json:
+  ```json
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+  ```
+- **Первый conventional commit**: `git cz` (тип: chore)
+
+![Настройка commitizen](images/lab04_06_edit_package.png)
+
+## Инициализация Gitflow
+
+- **Запуск git-flow**: `git flow init`
+  - Ветка релизов: `master`
+  - Ветка разработки: `develop`
+  - Префиксы: `feature/`, `release/`, `hotfix/`
+  - Префикс тегов: `v`
+- **Отправка веток**: `git push --all`
+
+![Gitflow init](images/lab04_09_git_flow_init.png)
+
+## Создание релиза v1.0.0
+
+- **Релизная ветка**: `git flow release start 1.0.0`
+- **Генерация CHANGELOG**: `standard-changelog --first-release`
+- **Завершение релиза**: `git flow release finish 1.0.0`
+- **Отправка тегов**: `git push --tags`
+- **Релиз на GitHub**: `gh release create v1.0.0 -F CHANGELOG.md`
+
+![Релиз на GitHub](images/lab04_16_gh_release.png)
+
+## Разработка новой функциональности
+
+- **Feature ветка**: `git flow feature start feature_branch`
+- **Добавление файла**: `echo "console.log('new feature');" > new-feature.js`
+- **Коммит с типом feat**: `git cz`
+- **Завершение**: `git flow feature finish feature_branch`
+
+![Feature commit](images/lab04_18_feature_commit.png)
+
+## Создание релиза v1.2.3
+
+- **Обновление версии** в package.json: `1.0.0` → `1.2.3`
+- **Обновление CHANGELOG**: `standard-changelog`
+- **Завершение релиза**: `git flow release finish 1.2.3`
+- **Отправка**: `git push --all && git push --tags`
+- **Релиз на GitHub**: `gh release create v1.2.3 -F CHANGELOG.md`
+
+![Релиз v1.2.3](images/lab04_27_gh_release_123.png)
+
+## Просмотр истории
+
+- **Граф коммитов**: `git log --oneline --graph --all`
+
+![Git log](images/lab04_28_git_log.png)
+
+## Выводы
+
+- Освоен рабочий процесс **Gitflow Workflow**
+- Изучено **семантическое версионирование** (SemVer)
+- Применены **Conventional Commits** для стандартизации коммитов
+- Настроена автоматическая генерация **CHANGELOG.md**
+- Освоена работа с **тегами** и **релизами** на GitHub
+- Получен практический опыт работы с **git-flow**, **commitizen**, **standard-changelog**
+
+Спасибо за внимание!

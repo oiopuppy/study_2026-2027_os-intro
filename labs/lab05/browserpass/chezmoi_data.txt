@@ -1,0 +1,290 @@
+{
+  "chezmoi": {
+    "arch": "amd64",
+    "args": [
+      "chezmoi",
+      "data"
+    ],
+    "cacheDir": "/home/hhl/.cache/chezmoi",
+    "command": "data",
+    "commandDir": "/home/hhl/work/study/2026-2027/Операционные системы/os-intro/labs/lab05/browserpass",
+    "config": {
+      "add": {
+        "encrypt": false,
+        "secrets": "warning",
+        "templateSymlinks": false
+      },
+      "age": {
+        "args": null,
+        "command": "age",
+        "identities": null,
+        "identity": "",
+        "passphrase": false,
+        "recipient": "",
+        "recipients": null,
+        "recipientsFile": "",
+        "recipientsFiles": null,
+        "suffix": ".age",
+        "symmetric": false,
+        "useBuiltin": false
+      },
+      "awsSecretsManager": {
+        "profile": "",
+        "region": ""
+      },
+      "azureKeyVault": {
+        "defaultVault": ""
+      },
+      "bitwarden": {
+        "command": "bw",
+        "unlock": false
+      },
+      "bitwardenSecrets": {
+        "command": "bws"
+      },
+      "cacheDir": "/home/hhl/.cache/chezmoi",
+      "cd": {
+        "args": null,
+        "command": ""
+      },
+      "color": "auto",
+      "completion": {
+        "custom": false
+      },
+      "dashlane": {
+        "args": null,
+        "command": "dcli"
+      },
+      "data": {},
+      "destDir": "/home/hhl",
+      "diff": {
+        "args": null,
+        "command": "",
+        "exclude": [],
+        "pager": "",
+        "pagerArgs": null,
+        "reverse": false,
+        "scriptContents": true
+      },
+      "docker": {
+        "command": "docker"
+      },
+      "doppler": {
+        "args": null,
+        "command": "doppler",
+        "config": "",
+        "project": ""
+      },
+      "edit": {
+        "apply": false,
+        "args": null,
+        "command": "",
+        "hardlink": true,
+        "minDuration": 1000000000,
+        "watch": false
+      },
+      "ejson": {
+        "key": "",
+        "keyDir": "/opt/ejson/keys"
+      },
+      "encryption": "",
+      "env": null,
+      "format": "json",
+      "git": {
+        "autoadd": false,
+        "autocommit": false,
+        "autopush": false,
+        "command": "git",
+        "commitMessageTemplate": "",
+        "commitMessageTemplateFile": "",
+        "lfs": false
+      },
+      "gitHub": {
+        "refreshPeriod": 60000000000
+      },
+      "gopass": {
+        "command": "gopass",
+        "mode": ""
+      },
+      "gpg": {
+        "args": null,
+        "command": "gpg",
+        "recipient": "",
+        "recipients": null,
+        "suffix": ".asc",
+        "symmetric": false
+      },
+      "hooks": null,
+      "interactive": false,
+      "interpreters": {
+        "bat": {
+          "args": null,
+          "command": ""
+        },
+        "cmd": {
+          "args": null,
+          "command": ""
+        },
+        "com": {
+          "args": null,
+          "command": ""
+        },
+        "exe": {
+          "args": null,
+          "command": ""
+        },
+        "nu": {
+          "args": null,
+          "command": "nu"
+        },
+        "pl": {
+          "args": null,
+          "command": "perl"
+        },
+        "ps1": {
+          "args": null,
+          "command": ""
+        },
+        "py": {
+          "args": null,
+          "command": "python3"
+        },
+        "rb": {
+          "args": null,
+          "command": "ruby"
+        }
+      },
+      "keepassxc": {
+        "args": null,
+        "command": "keepassxc-cli",
+        "database": "",
+        "mode": "cache-password",
+        "prompt": true
+      },
+      "keeper": {
+        "args": null,
+        "command": "keeper"
+      },
+      "lastpass": {
+        "command": "lpass"
+      },
+      "lessInteractive": false,
+      "merge": {
+        "args": null,
+        "command": "vimdiff"
+      },
+      "mode": "file",
+      "onepassword": {
+        "command": "op",
+        "mode": "account",
+        "prompt": true
+      },
+      "pager": "",
+      "pagerArgs": null,
+      "pass": {
+        "command": "pass"
+      },
+      "passhole": {
+        "args": null,
+        "command": "ph",
+        "prompt": true
+      },
+      "persistentState": "",
+      "pinentry": {
+        "args": null,
+        "command": "",
+        "options": [
+          "allow-external-password-cache"
+        ]
+      },
+      "progress": "auto",
+      "protonPass": {
+        "command": "pass-cli"
+      },
+      "rbw": {
+        "command": "rbw"
+      },
+      "safe": true,
+      "scriptEnv": null,
+      "scriptTempDir": "",
+      "secret": {
+        "args": null,
+        "command": ""
+      },
+      "sourceDir": "/home/hhl/.local/share/chezmoi",
+      "status": {
+        "exclude": [],
+        "pathStyle": "relative"
+      },
+      "tempDir": "/tmp",
+      "template": {
+        "options": [
+          "missingkey=error"
+        ]
+      },
+      "textConv": null,
+      "umask": 18,
+      "update": {
+        "apply": true,
+        "args": null,
+        "command": "",
+        "recurseSubmodules": true
+      },
+      "useBuiltinAge": "auto",
+      "useBuiltinGit": "auto",
+      "vault": {
+        "command": "vault"
+      },
+      "verbose": false,
+      "verify": {
+        "exclude": []
+      },
+      "warnings": {
+        "configFileTemplateHasChanged": true
+      },
+      "workingTree": "/home/hhl/.local/share/chezmoi"
+    },
+    "configFile": "/home/hhl/.config/chezmoi/chezmoi.toml",
+    "destDir": "/home/hhl",
+    "executable": "/home/hhl/bin/chezmoi",
+    "fqdnHostname": "LAPTOP-058L8DAA.localdomain",
+    "gid": "1000",
+    "group": "hhl",
+    "homeDir": "/home/hhl",
+    "hostname": "LAPTOP-058L8DAA",
+    "kernel": {
+      "osrelease": "6.6.87.2-microsoft-standard-WSL2",
+      "ostype": "Linux",
+      "version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025"
+    },
+    "os": "linux",
+    "osRelease": {
+      "bugReportURL": "https://bugs.launchpad.net/ubuntu/",
+      "homeURL": "https://www.ubuntu.com/",
+      "id": "ubuntu",
+      "idLike": "debian",
+      "logo": "ubuntu-logo",
+      "name": "Ubuntu",
+      "prettyName": "Ubuntu 24.04.1 LTS",
+      "privacyPolicyURL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "supportURL": "https://help.ubuntu.com/",
+      "ubuntuCodename": "noble",
+      "version": "24.04.1 LTS (Noble Numbat)",
+      "versionCodename": "noble",
+      "versionID": "24.04"
+    },
+    "pathListSeparator": ":",
+    "pathSeparator": "/",
+    "sourceDir": "/home/hhl/.local/share/chezmoi",
+    "uid": "1000",
+    "username": "hhl",
+    "version": {
+      "builtBy": "goreleaser",
+      "commit": "c4c669c9f2f329233a85802014d26fba3c58a4a4",
+      "date": "2026-02-11T08:59:37Z",
+      "version": "2.69.4"
+    },
+    "windowsVersion": {},
+    "workingTree": "/home/hhl/.local/share/chezmoi"
+  }
+}

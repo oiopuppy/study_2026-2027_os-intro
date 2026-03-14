@@ -1,0 +1,108 @@
+---
+title: "Этап 1"
+subtitle: "Персональная огромная веб-страница"
+author: "Сунь Шэнцзе"
+institute: "РУДН"
+date: "2026-03-01"
+format:
+  beamer:
+    theme: "Madrid"
+    colortheme: "default"
+    fonttheme: "professionalfonts"
+    toc: false
+    slide-level: 2
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+    lang: ru
+number: "1132254527"
+---
+
+## Цель работы
+
+Освоить создание и размещение персонального академического сайта на GitHub Pages, настройку структуры, добавление контента на русском и английском языках, интеграцию ссылок на научные ресурсы.
+
+## Этапы выполнения проекта
+
+### Подготовительный этап
+
+**Установка ПО**: Git, текстовый редактор, браузер.
+
+![Проверка установки Git](images/project_01_git_version.png)
+
+**Выбор шаблона**: Academic Hugo / Wowchemy.
+
+```bash
+git clone https://github.com/wowchemy/starter-hugo-academic.git
+
+## Размещение на GitHub
+
+- **Создание репозитория**: `username.github.io`
+- **Загрузка шаблона**:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/username/username.github.io.git
+git push -u origin main
+```
+- Настройка GitHub Pages: ветка main, папка /root.
+
+- Сайт доступен: https://username.github.io
+
+![Первая версия сайта на GitHub Pages](images/project_06_site_first_view.png)
+
+## Добавление персональных данных
+
+- **Фото**: `assets/media/photo.jpg`, настройка в `params.yaml`
+- **Биография**: `content/authors/admin/_index.md`
+- **Интересы и образование**: в том же файле
+
+![Фото владельца](images/project_07_photo.png)
+![Интересы](images/project_09_interests.png)
+![Образование](images/project_10_education.png)
+
+## Добавление блога
+
+- **Пост о неделе**: `content/post/week1/`
+- **Пост о Git**: `content/post/git/`
+
+![Пост о неделе](images/project_11_week_post.png)
+![Пост о Git](images/project_12_git_post.png)
+
+## Добавление достижений
+
+- **Навыки**: настройка в соответствующем файле
+
+![Навыки](images/project_13_skills.png)
+
+## Ссылки на научные ресурсы
+
+Добавлены ссылки на:
+- eLibrary
+- Google Scholar
+- ORCID
+- Mendeley
+- ResearchGate
+- Academia.edu
+- arXiv
+- GitHub
+
+## Двуязычный сайт
+
+Настройка языков в `languages.yaml`:
+
+```yaml
+ru:
+  languageCode: ru-RU
+  contentDir: content/ru
+en:
+  languageCode: en-US
+  contentDir: content/en
+  
+## Выводы
+
+Создан и размещён на GitHub Pages персональный академический сайт. Выполнены все этапы: установка ПО, настройка шаблона, публикация, добавление персональных данных, постов, достижений, ссылок на научные ресурсы и поддержка двух языков.
+
+Сайт доступен: `https://oiopuppy.github.io`
