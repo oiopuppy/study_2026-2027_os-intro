@@ -1,0 +1,104 @@
+---
+title: "Этапы реализации проекта: Личный сайт на GitHub Pages"
+author: "Сунь Шэнцзе"
+date: "2026-04-29"
+format:
+  beamer:
+    theme: "Madrid"
+    colortheme: "default"
+    fonttheme: "professionalfonts"
+    toc: false
+    slide-level: 2
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+    lang: ru
+---
+
+## Цель проекта
+
+- Развитие личного сайта  
+- Интеграция научных сервисов  
+- Публикация материалов  
+
+---
+
+## Используемые ресурсы
+
+- Google Scholar  
+- ORCID  
+- ResearchGate  
+- Academia.edu  
+- arXiv  
+- GitHub  
+- eLibrary  
+- Mendeley  
+
+---
+
+## Интеграция ссылок
+
+links:
+  - GitHub: https://github.com/oiopuppy  
+  - Google Scholar: https://scholar.google.com/  
+  - ORCID: https://orcid.org/  
+  - ResearchGate: https://www.researchgate.net/  
+  - Academia.edu: https://www.academia.edu/  
+  - arXiv: https://arxiv.org/
+
+---
+
+## Результат интеграции
+
+![](images/project_17_academic_links.png)
+
+- Ссылки добавлены в профиль  
+- Подключены научные платформы  
+- Обновлена структура сайта  
+
+---
+
+## Пост 1: неделя работы
+
+Файл: week2-review  
+
+- Регистрация на научных платформах  
+- Добавление ссылок на сайт  
+- Отражение прогресса проекта  
+
+---
+
+## Результат поста 1
+
+![](images/project_week2_post.png)
+
+---
+
+## Пост 2: оформление отчёта
+
+Файл: report-design  
+
+- Структура лабораторного отчёта  
+- Описание этапов работы  
+- Требования к оформлению  
+
+---
+
+## Результат поста 2
+
+![](images/project_18_report_post.png)
+
+---
+
+## Итоги проекта
+
+- Настроен личный сайт  
+- Добавлены научные профили  
+- Созданы публикации  
+- Проект опубликован  
+
+---
+
+## Заключение
+
+Проект успешно реализован и готов к дальнейшему развитию.

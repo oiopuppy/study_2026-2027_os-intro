@@ -1,0 +1,104 @@
+---
+title: "Этапы реализации проекта: Личный сайт на GitHub Pages"
+author: "Сунь Шэнцзе"
+date: "2026-04-29"
+format:
+  pdf:
+    documentclass: article
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+    latex-engine: xelatex
+    lang: ru
+---
+
+## 1. Цель работы
+
+Добавить на сайт ссылки на научные и библиометрические ресурсы, а также создать два новых поста.
+
+## 2. Этапы выполнения проекта
+
+### 2.1. Добавление ссылок на научные ресурсы
+
+#### 2.1.1. Регистрация на ресурсах
+
+Выполнена регистрация на следующих ресурсах:
+
+| Ресурс | Ссылка |
+|--------|--------|
+| eLibrary | https://elibrary.ru/ |
+| Google Scholar | https://scholar.google.com/ |
+| ORCID | https://orcid.org/ |
+| Mendeley | https://www.mendeley.com/ |
+| ResearchGate | https://www.researchgate.net/ |
+| Academia.edu | https://www.academia.edu/ |
+| arXiv | https://arxiv.org/ |
+| GitHub | https://github.com/ |
+
+#### 2.1.2. Размещение ссылок на сайте
+
+В файл `data/authors/me.yaml` добавлены ссылки:
+
+links:
+  - icon: brands/github
+    url: https://github.com/oiopuppy
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/
+  - icon: academicons/orcid
+    url: https://orcid.org/
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/
+  - icon: academicons/academia
+    url: https://www.academia.edu/
+  - icon: academicons/arxiv
+    url: https://arxiv.org/
+
+## Рисунок 1
+
+![](images/project_17_academic_links.png)
+
+### 2.2. Создание постов
+
+#### 2.2.1. Пост о прошедшей неделе
+
+Создан файл `content/blog/week2-review/index.md`:
+
+---
+title: "Моя вторая неделя работы над проектом"
+date: 2026-04-29
+authors:
+  - me
+---
+
+На этой неделе я зарегистрировался на научных ресурсах и добавил ссылки на них на сайт.
+
+## Рисунок 2
+
+![](images/project_week2_post.png)
+
+#### 2.2.2. Пост на тему "Оформление отчёта"
+
+Создан файл `content/blog/report-design/index.md`:
+
+---
+title: "Оформление отчёта по лабораторной работе"
+date: 2026-04-29
+authors:
+  - me
+---
+
+Отчёт должен содержать: цель работы, ход выполнения, скриншоты, ответы на вопросы и выводы.
+
+## Рисунок 3
+
+![](images/project_18_report_post.png)
+
+## 3. Заключение
+
+В результате выполнения этапа:
+
+- Зарегистрированы аккаунты на научных ресурсах  
+- Добавлены ссылки на сайт  
+- Созданы два поста  
+
+Сайт доступен по адресу: https://oiopuppy.github.io
