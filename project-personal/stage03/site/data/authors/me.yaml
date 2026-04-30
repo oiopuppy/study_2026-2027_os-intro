@@ -1,0 +1,42 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: "Сунь Шэнцзе"
+  given: "Шэнцзе"
+  family: "Сунь"
+role: "студент"
+bio: |
+  Студент РУДН, интересуюсь операционными системами и архитектурой компьютеров.
+  
+  **Навыки:** Python, Linux, Git
+  
+  **Опыт:** Учебные проекты в РУДН (2025 - настоящее время)
+  
+  **Достижения:** Сертификат по основам Linux (Stepik, 2025)
+affiliations:
+  - name: РУДН
+    url: https://www.rudn.ru/
+interests:
+  - Операционные системы
+  - Архитектура компьютеров
+education:
+  - degree: Бакалавриат (02.03.00)
+    institution: РУДН
+    start: 2025-09-01
+    end: 2029-06-30
+links:
+  - icon: brands/github
+    url: https://github.com/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/
+  - icon: academicons/orcid
+    url: https://orcid.org/
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/
+  - icon: academicons/academia
+    url: https://www.academia.edu/
+  - icon: academicons/arxiv
+    url: https://arxiv.org/
+  - icon: academicons/mendeley
+    url: https://www.mendeley.com/
