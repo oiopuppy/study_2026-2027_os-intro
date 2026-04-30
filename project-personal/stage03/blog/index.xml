@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs | </title>
+    <link>https://example.com/blog/</link>
+      <atom:link href="https://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blogs</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu_fb558a5ed99f547e.png</url>
+      <title>Blogs</title>
+      <link>https://example.com/blog/</link>
+    </image>
+    
+    <item>
+      <title>Моя вторая неделя работы над проектом</title>
+      <link>https://example.com/blog/week2-review/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/blog/week2-review/</guid>
+      <description>&lt;p&gt;На этой неделе я добавил на сайт ссылки на научные ресурсы:
+GitHub, Google Scholar, ORCID, ResearchGate, Academia.edu, arXiv.
+Теперь мой сайт связан с основными библиометрическими базами данных.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Оформление отчёта по лабораторной работе</title>
+      <link>https://example.com/blog/report-design/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/blog/report-design/</guid>
+      <description>&lt;p&gt;Правильное оформление отчёта включает:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Цель работы&lt;/li&gt;
+&lt;li&gt;Ход выполнения с скриншотами&lt;/li&gt;
+&lt;li&gt;Ответы на контрольные вопросы&lt;/li&gt;
+&lt;li&gt;Выводы&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Markdown позволяет легко создавать структурированные отчёты.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Легковесные языки разметки: Markdown</title>
+      <link>https://example.com/blog/markdown-intro/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/blog/markdown-intro/</guid>
+      <description>&lt;p&gt;Markdown — это легковесный язык разметки, который преобразуется в HTML.
+Он прост в изучении и широко используется для документации,
+README файлов и блогов. Весь контент этого сайта написан на Markdown.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Моя первая неделя работы над проектом</title>
+      <link>https://example.com/blog/week1-review/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/blog/week1-review/</guid>
+      <description>&lt;p&gt;На этой неделе я начал работу над индивидуальным проектом.
+Установил Hugo, скачал шаблон Academic, настроил локальный
+сервер и добавил базовую информацию о себе на сайт.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
