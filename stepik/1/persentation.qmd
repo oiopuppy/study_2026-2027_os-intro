@@ -1,0 +1,223 @@
+---
+title: "Глава 1: Введение в Linux"
+subtitle: "Основы работы в командной строке"
+author: "Сунь Шэнцзе"
+institute: "РУДН"
+date: "2026-05-06"
+format:
+  beamer:
+    theme: "Madrid"
+    colortheme: "default"
+    fonttheme: "professionalfonts"
+    toc: false
+    slide-level: 2
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
+    monofont: "DejaVu Sans Mono"
+    lang: ru
+---
+
+## Цель главы
+
+- Установка Linux  
+- Освоение терминала  
+- Запуск исполняемых файлов  
+- Ввод/вывод и перенаправление  
+- Скачивание файлов из интернета  
+- Работа с архивами  
+- Поиск файлов и слов  
+
+---
+
+## Установка Linux
+
+- Выбор дистрибутива (Ubuntu, CentOS, Debian)  
+- Установка на виртуальную машину (VirtualBox, VMware)  
+- Создание загрузочной флешки (Rufus, dd)  
+- Разметка диска и настройка разделов  
+
+
+---
+
+## Освоение терминала
+
+### Основные команды навигации
+
+| Команда | Действие |
+|---------|----------|
+| `pwd`   | Показать текущую директорию |
+| `ls`    | Список файлов и папок |
+| `cd`    | Сменить директорию |
+| `mkdir` | Создать папку |
+| `rm`    | Удалить файл/папку |
+
+---
+
+## Работа с файлами
+
+```
+# Создание файла
+touch file.txt
+
+# Копирование
+cp source.txt dest.txt
+
+# Перемещение/переименование
+mv old.txt new.txt
+
+# Просмотр содержимого
+cat file.txt
+less file.txt
+head -n 5 file.txt
+tail -n 5 file.txt
+```
+
+---
+
+## Запуск исполняемых файлов
+
+### Переменная PATH
+
+```
+echo $PATH
+# /usr/local/bin:/usr/bin:/bin:/usr/games
+```
+
+Система ищет программу в директориях из PATH  
+
+- Запуск из текущей папки: `./program`  
+- Добавление своей папки: `export PATH=$PATH:/my/bin`  
+
+---
+
+## Ввод / вывод
+
+### Перенаправление потоков
+
+| Оператор | Значение |
+|----------|----------|
+| `>`  | Перезапись stdout |
+| `>>` | Добавление stdout |
+| `2>` | stderr |
+| `&>` | stdout + stderr |
+| `\|` | pipe |
+
+### Примеры
+
+```
+ls > files.txt
+ls -la 2> error.log
+cmd1 | cmd2
+```
+
+---
+
+## Скачивание файлов
+
+### wget
+
+```
+wget https://example.com/file.zip
+wget -r https://example.com/
+wget -P /downloads/ file.zip
+```
+
+### curl
+
+```
+curl -O https://example.com/file.zip
+curl -o newname.zip https://example.com/file.zip
+curl -L https://example.com/redirected
+```
+
+---
+
+## Работа с архивами
+
+### tar
+
+```
+tar -czf archive.tar.gz folder/
+tar -xzf archive.tar.gz
+tar -tzf archive.tar.gz
+```
+
+### zip
+
+```
+zip archive.zip file1 file2
+unzip archive.zip
+```
+
+---
+
+## Пример работы с архивами
+
+
+```
+tar -czf backup.tar.gz documents/
+ls -lh backup.tar.gz
+
+tar -xzf backup.tar.gz
+ls documents/
+```
+
+---
+
+## Поиск файлов и слов
+
+### find
+
+```
+find /home -name "*.txt"
+find /var -size +10M
+find . -type d
+find . -mtime -7
+```
+
+### grep
+
+```
+grep "error" log.txt
+grep -r "TODO" ./src
+grep -i "warning" *.log
+grep -n "pattern" file.txt
+```
+
+---
+
+## Пример поиска
+
+
+```
+grep -r "main" --include="*.c" .
+
+find . -name "*.c" | wc -l
+```
+
+---
+
+## Контрольные вопросы
+
+- Как установить Linux на виртуальную машину?  
+- Что такое терминал и shell?  
+- Как запустить программу вне PATH?  
+- Разница между `>` и `>>`?  
+- Команды для скачивания файлов?  
+- Работа с архивами `.tar.gz`?  
+- Разница find и grep?  
+
+---
+
+## Выводы
+
+- Установлен Linux  
+- Освоены команды терминала  
+- Изучено перенаправление  
+- Освоены wget и curl  
+- Работа с архивами  
+- Поиск через find и grep  
+
+---
+
+## Спасибо за внимание!
